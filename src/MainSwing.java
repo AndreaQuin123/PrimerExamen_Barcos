@@ -111,15 +111,19 @@ public class MainSwing extends javax.swing.JFrame {
     }//GEN-LAST:event_VaciarBarcoBTNActionPerformed
 
     private void BarcoDesdeBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BarcoDesdeBTNActionPerformed
-    try {
-        String año = JOptionPane.showInputDialog(null, "Agregar del barco al cual desea vaciar");
-    
-    }catch (NumberFormatException e){
-        
-        JOptionPane.showMessageDialog(null, "Por favor, insertar un año valido.");
-    }
-    
-    
+        try {
+            String año = JOptionPane.showInputDialog(null, "Inserte el año que desea visualizar.");
+
+            int añoINT = Integer.parseInt(año);
+
+            funcion.barcosDesde(añoINT);
+
+        } catch (NumberFormatException e) {
+
+            JOptionPane.showMessageDialog(null, "Por favor, insertar un año valido.");
+        }
+
+
     }//GEN-LAST:event_BarcoDesdeBTNActionPerformed
 
     private void SalirBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirBTNActionPerformed

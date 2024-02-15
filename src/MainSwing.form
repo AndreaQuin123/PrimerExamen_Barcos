@@ -54,7 +54,6 @@
     <Component class="javax.swing.JButton" name="BarcoDesdeBTN">
       <Properties>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
-        <Property name="label" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BarcoDesdeBTNActionPerformed"/>
